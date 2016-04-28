@@ -39,8 +39,11 @@ public class PieChartDaoTest {
 		assertTrue(isEqual(e1, dao.getPieChartEntityById(e1.getId())));
 		assertTrue(isEqual(e2, dao.getPieChartEntityById(e2.getId())));
 		assertTrue(isEqual(e3, dao.getPieChartEntityById(e3.getId())));
-
 		assertTrue(dao.getAllPieChartEntities().size() == eList.size());
+
+		PieChartEntity e4 = new PieChartEntity("Test4", 12.6764);
+		dao.save(e4);
+		assertTrue(isEqual(e4, dao.getPieChartEntityById(e4.getId())));
 
 	}
 
