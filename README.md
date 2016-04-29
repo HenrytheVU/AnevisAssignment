@@ -2,12 +2,16 @@
 
 ## Pie Chart Generator
 
+This is a pretty straight forward approach to the given assignment.
+
 Functionalites of the App: 
-Import the given ```piechart-data.xls``` sheet to generate a pie chart as pdf and save the imported data into a running PostgreSQL instance.
+Import the ```piechart-data.xls``` sheet to generate a pie chart as pdf and save the imported data into a running PostgreSQL instance.
 
 ## Quick Installation Guide
 
 This App runs on Java 8 & PostgreSQL
+
+Use maven to add all required dependencies.
 
 Find & run App.java under:
 
